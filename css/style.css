@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+ul,
+ol {
+  list-style-type: none;
+}
+
+nav {
+  background-color: rgb(231, 12, 12);
+}
+nav ul {
+  text-align: center;
+}
+nav ul li {
+  display: inline-block;
+  position: relative;
+  border-radius: 10px;
+}
+nav ul li a {
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Michroma", sans-serif;
+  font-size: 20px;
+  padding: 15px 15px;
+  display: block;
+  transition: all linear 0.3s;
+}
+nav ul li a:hover {
+  background-color: rgb(0, 0, 0);
+  font-size: 20px ;
+  color:rgb(251, 0, 255)
+}
+
+nav ul li ul {
+  position: absolute;
+  background-color: green;
+  width: 230px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0px;
+  opacity: 0;
+  transition: all linear 0.3s;
+  z-index: 1;
+}
+nav ul li ul li {
+  width: 100%;
+  border: 2px solid rgb(11, 11, 11);
+}
+nav ul li ul li a {
+  font-size: 16px;
+}
+nav ul li:hover > ul {
+  top: 50px;
+  opacity: 1;
+}
+nav ul li ul li ul {
+  left: 150%;
+  top: 0px !important;
+}
+nav ul li ul li ul li{
+  background-color: rgb(27, 151, 185);
+  border: 2px solid rgb(11, 11, 11);
+  width: 260px;
+}
+nav ul li ul li ul li ul li{
+  background-color: rgb(222, 212, 22);
+}
+
+/*================ Menu End ===================*/
+
+
+
+
+.main {
+  width: 1000px;
+  height: 600px;
+  background-color: #43d8d8;
+  margin: 50px auto;
+  position: relative;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius:50px;
+  border: 5px solid rgb(11, 11, 11);
+  box-shadow: 40px 40px 40px rgb(90, 100, 91);
+}
+.box1 {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(253, 0, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: ghuro 5s infinite;
+  text-align: center;
+  font-size: 30px;
+  color:#f5f5f5;
+  border: 2px solid rgb(11, 11, 11);
+}
+
+@keyframes ghuro {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  25% {
+    top: 0;
+    left: 900px;
+    background-color: rgb(221, 0, 255);
+      transform: rotate(5000deg)
+  }
+  50% {
+    top: 500px;
+    left: 900px;
+    background-color: rgb(109, 16, 223);
+  }
+  75% {
+    top: 500px;
+    left: 0px;
+    background-color: rgb(0, 255, 26);
+    border-radius: 50%;
+  }
+  100% {
+    top: 0;
+    left: 0;
+    
+  }
+}
+
+/*================ Menu End ===================*/
+
+
+
+.main2 {
+  width: 1000px;
+  height: 500px;
+  margin: 20px auto;
+  position: relative;
+  box-shadow: 40px 40px 40px rgb(90, 100, 91);
+}
+img{
+ width: 1050px;
+ height: 500px;
+}
+
+.one {
+  position: absolute;
+  width: 150px;
+  height: 100px;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  animation: one 5s infinite;
+}
+.img2{
+  width:150px;
+  height:100px;
+}
+@keyframes one {
+  0% {
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  25% {
+    left: 300px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  50% {
+    left: 900px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  75% {
+    left: 900px;
+    top: 50%;
+    transform: translateY(-50%) rotate(180deg)
+  }
+  90% {
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%) rotate(180deg);
+
+  }
+}
+
+.two {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: two 9s infinite;
+}
+.img3 {
+  width:100px;
+  height:100px;
+}
+
+@keyframes two {
+  0% {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  25% {
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  50% {
+    top: 400px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  75% {
+    top: 400px;
+    left: 50%;
+    transform: translateX(-50%) rotate(180deg)
+  }
+  90% {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) rotate(180deg)
+  }
+}
